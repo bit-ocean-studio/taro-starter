@@ -1,8 +1,7 @@
 {
   "name": "taro-stater",
-  "version": "1.0.0",
-  "private": true,
   "description": "⚛️ An opinionated Taro starter template.",
+  "version": "1.0.0",
   "templateInfo": {
     "name": "taro-ui",
     "typescript": true,
@@ -29,12 +28,6 @@
     "dev:jd": "npm run build:jd -- --watch",
     "dev:quickapp": "npm run build:quickapp -- --watch"
   },
-  "browserslist": [
-    "last 3 versions",
-    "Android >= 4.1",
-    "ios >= 8"
-  ],
-  "author": "",
   "dependencies": {
     "@babel/runtime": "^7.24.5",
     "@tarojs/components": "3.6.30",
@@ -58,6 +51,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.24.5",
+    "@bit-ocean/cli": "^0.0.19",
     "@bit-ocean/prettier-config": "^0.0.19",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.13",
     "@tarojs/cli": "3.6.30",
@@ -66,8 +60,8 @@
     "@types/node": "^20.12.12",
     "@types/react": "^18.3.2",
     "@types/webpack-env": "^1.18.5",
-    "@typescript-eslint/eslint-plugin": "^7.9.0",
-    "@typescript-eslint/parser": "^7.9.0",
+    "@typescript-eslint/eslint-plugin": "^7.10.0",
+    "@typescript-eslint/parser": "^7.10.0",
     "babel-preset-taro": "3.6.30",
     "eslint": "^8.57.0",
     "eslint-config-taro": "3.6.30",
@@ -81,5 +75,12 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5",
     "webpack": "^5.91.0"
-  }
+  },
+  "browserslist": [
+    "last 3 versions",
+    "Android >= 4.1",
+    "ios >= 8"
+  ],
+  "private": true,
+  "license": "MIT"
 }
