@@ -2,7 +2,9 @@ import { Component, PropsWithChildren } from 'react'
 import './app.scss'
 
 class App extends Component<PropsWithChildren> {
-  componentDidMount() {}
+  componentDidMount() {
+    console.log(process.env.TARO_APP_BASE_API_PREFIX)
+  }
 
   componentDidShow() {}
 

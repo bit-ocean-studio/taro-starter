@@ -33,6 +33,7 @@ export default class Index extends Component<PropsWithChildren> {
         >
           来
         </AtButton>
+        环境变量：{process.env.TARO_APP_BASE_API_PREFIX}
       </View>
     )
   }
