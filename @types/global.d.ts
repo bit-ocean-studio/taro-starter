@@ -15,5 +15,6 @@ declare namespace NodeJS {
   interface ProcessEnv {
     TARO_ENV: 'weapp' | 'swan' | 'alipay' | 'h5' | 'rn' | 'tt' | 'quickapp' | 'qq' | 'jd'
     TARO_APP_BASE_API_PREFIX: string
+    NODE_ENV: 'development' | 'staging' | 'production'
   }
 }

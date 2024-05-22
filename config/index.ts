@@ -1,3 +1,5 @@
+import { defineConfig } from '@tarojs/cli'
+
 const config = {
   projectName: 'taro-stater',
   date: '2024-5-18',
@@ -66,9 +68,14 @@ const config = {
   }
 }
 
-module.exports = function (merge) {
-  if (process.env.NODE_ENV === 'development') {
-    return merge({}, config, require('./dev'))
+export default defineConfig((merge, { mode }) => {
+  switch (mode) {
+    case 'development':
+      return merge({}, config, require('./dev'))
+    case 'staging':
+      return merge({}, config, require('./staging'))
+    case 'production':
+    default:
+      return merge({}, config, require('./prod'))
   }
-  return merge({}, config, require('./prod'))
-}
+})
