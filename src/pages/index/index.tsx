@@ -6,7 +6,7 @@ import 'taro-ui/dist/style/components/button.scss' // 按需引入
 export default function Index() {
   return (
     <View>
-      <Text>Hello world!</Text>
+      <Text className="text-red-500">Hello world!</Text>
       <AtButton type="primary">I need Taro UI</AtButton>
       <Text>Taro UI 支持 Vue 了吗？</Text>
       <AtButton

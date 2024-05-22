@@ -20,6 +20,6 @@
     "resolveJsonModule": true,
     "typeRoots": ["node_modules/@types"]
   },
-  "include": ["src", "config", "@types"],
+  "include": ["src", "config", "tailwind.config.js", "@types"],
   "compileOnSave": false
 }

@@ -35,7 +35,8 @@
     "staging:rn": "taro build --type rn --mode staging",
     "staging:qq": "taro build --type qq --mode staging",
     "staging:jd": "taro build --type jd --mode staging",
-    "staging:quickapp": "taro build --type quickapp --mode staging"
+    "staging:quickapp": "taro build --type quickapp --mode staging",
+    "postinstall": "weapp-tw patch"
   },
   "dependencies": {
     "@babel/runtime": "^7.24.5",
@@ -71,6 +72,7 @@
     "@types/webpack-env": "^1.18.5",
     "@typescript-eslint/eslint-plugin": "^7.10.0",
     "@typescript-eslint/parser": "^7.10.0",
+    "autoprefixer": "^10.4.19",
     "babel-preset-taro": "3.6.30",
     "eslint": "^8.57.0",
     "eslint-config-taro": "3.6.30",
@@ -78,11 +80,14 @@
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.2",
     "postcss": "^8.4.38",
+    "postcss-rem-to-responsive-pixel": "^6.0.1",
     "prettier": "^3.2.5",
     "react-refresh": "^0.14.2",
     "stylelint": "16.5.0",
+    "tailwindcss": "^3.4.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5",
+    "weapp-tailwindcss": "^3.2.1",
     "webpack": "^5.91.0"
   },
   "browserslist": [

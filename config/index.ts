@@ -1,4 +1,5 @@
 import { defineConfig } from '@tarojs/cli'
+import { UnifiedWebpackPluginV5 } from 'weapp-tailwindcss/webpack'
 
 const config = {
   projectName: 'taro-stater',
@@ -47,6 +48,20 @@ const config = {
           generateScopedName: '[name]__[local]___[hash:base64:5]'
         }
       }
+    },
+    webpackChain(chain) {
+      chain.merge({
+        plugin: {
+          install: {
+            plugin: UnifiedWebpackPluginV5,
+            args: [
+              {
+                appType: 'taro'
+              }
+            ]
+          }
+        }
+      })
     }
   },
   h5: {

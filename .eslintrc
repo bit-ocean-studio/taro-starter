@@ -7,7 +7,7 @@
   },
   "overrides": [
     {
-      "files": ["babel.config.js", "./config/*.ts"],
+      "files": ["./config/*.ts", "babel.config.js", "tailwind.config.js", "postcss.config.js"],
       "rules": {
         "import/no-commonjs": "off"
       }
