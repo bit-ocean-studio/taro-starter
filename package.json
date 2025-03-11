@@ -39,7 +39,7 @@
     "postinstall": "weapp-tw patch"
   },
   "dependencies": {
-    "@babel/runtime": "^7.24.5",
+    "@babel/runtime": "^7.26.10",
     "@tarojs/components": "3.6.30",
     "@tarojs/helper": "3.6.30",
     "@tarojs/plugin-framework-react": "3.6.30",
